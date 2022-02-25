@@ -237,6 +237,15 @@ h1 {
   font-weight: 500;
 }
 
+.title {
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+.title a:hover {
+  color: #5a4a4a;
+}
+
 .list-button {
   width: 40px;
   height: 40px;
@@ -451,7 +460,13 @@ h2 {
     display: block;
   }
 }
-
+.video-wrap {
+  margin: 0 auto;
+  max-width: 865px;
+}
+.video {
+  margin: auto;
+}
 /* 暑期學校 */
 .summer-school {
   background-color: #fde458;
