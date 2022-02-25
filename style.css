@@ -232,7 +232,7 @@ h1 {
 .nav a {
   padding: 10px 30px;
 
-  color: #805535;
+  color: #5f4d4d;
   text-decoration: none;
   font-weight: 500;
 }
@@ -463,96 +463,6 @@ h2 {
 }
 
 /* 時間線 */
-.timeline {
-  padding-top: 5%;
-}
-
-.timeline ul li {
-  width: 50%;
-  position: relative;
-  /* list-style-type: none;
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 50px;
-  background: #fff; */
-}
-
-.timeline li::before {
-  /* 圓點 */
-  content: "";
-  position: absolute;
-  top: -350px;
-  bottom: 0;
-  margin: auto;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #69442a;
-}
-
-.timeline li:nth-child(odd) {
-  float: left;
-  padding-right: 100px;
-}
-
-.timeline li:nth-child(odd)::before {
-  right: -10px;
-}
-
-.timeline li:nth-child(odd)::after {
-  /* 繪製垂直時間線 */
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background-color: #69442a;
-}
-
-.timeline li:nth-child(odd)::after {
-  /* 繪製基數列橫線 */
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background-color: #69442a;
-}
-
-.timeline li:nth-child(even) {
-  float: right;
-  padding-left: 100px;
-  transform: translateY(50%);
-}
-
-.timeline li:nth-child(even):last-child {
-  height: 50%;
-}
-
-.timeline li:nth-child(even)::before {
-  left: -10px;
-}
-
-.timeline h6::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 100px;
-  background-color: #574444;
-  top: 67px;
-}
-
-.timeline li:nth-child(odd) h6::after {
-  right: 0;
-}
-
-.timeline li:nth-child(even) h6::after {
-  left: 0;
-}
-
 /* test */
 /* h2{
   margin: 0 0 10px;
