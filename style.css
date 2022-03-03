@@ -214,6 +214,10 @@ body {
   padding-top: 100px;
 }
 
+.pb-100 {
+  padding-bottom: 100px;
+}
+
 .text-brown-d {
   color: #5f4d4d;
 }
@@ -298,7 +302,7 @@ h1 {
 
 h2 {
   color: #69442a;
-  padding-top: 200px;
+  /* padding-top: 200px; */
 }
 
 .banner-text {
@@ -387,7 +391,7 @@ h2 {
 .speech {
   background-color: #fde458;
 }
-
+/* youtube 影片 */
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -467,6 +471,7 @@ h2 {
 .video {
   margin: auto;
 }
+
 /* 暑期學校 */
 .summer-school {
   background-color: #fde458;
