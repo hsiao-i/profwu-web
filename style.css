@@ -152,6 +152,7 @@ a {
 
 body {
   font-family: "Noto Sans TC", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 .container-960 {
@@ -172,6 +173,12 @@ body {
   font-size: 18px;
   color: #805535;
   font-weight: 500;
+}
+
+.f-18-d {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6c757d;
 }
 
 .f-24 {
@@ -390,6 +397,12 @@ h2 {
 .speech {
   background-color: #fde458;
 }
+
+/* 教學相關獎項 */
+.bulleted {
+  list-style-type: disc;
+}
+
 /* youtube 影片 */
 .embed-container {
   position: relative;
@@ -634,10 +647,15 @@ h2 {
   }
 }
 
+
 .ss-btn:hover {
   color: #fff;
 }
 
 .footer {
   background-color: #e2e8e4;
+}
+
+.anchor:target {
+  padding-top: 100px;
 }

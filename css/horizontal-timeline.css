@@ -10,9 +10,7 @@ Primary style
   box-sizing: border-box;
 }
 
-html {
-  /* font-size: 62.5%; */
-}
+
 
 /* body {
   font-size: 1.6rem;
@@ -315,7 +313,7 @@ Main Components
   max-width: 800px;
   margin: 0 auto;
 }
-.cd-horizontal-timeline .events-content h2 {
+.cd-horizontal-timeline .events-content h5 {
   font-weight: bold;
   font-size: 1.1rem;
   font-family: "Playfair Display", sans-serif;
@@ -340,7 +338,7 @@ Main Components
   line-height: 1.6;
 }
 @media only screen and (min-width: 768px) {
-  .cd-horizontal-timeline .events-content h2 {
+  .cd-horizontal-timeline .events-content h5 {
     font-size: 1rem;
   }
   .cd-horizontal-timeline .events-content em {

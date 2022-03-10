@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/horizontal-timeline.css" />
+    <link rel="stylesheet" href="./css/list-timeline.css">
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
     </style>
@@ -33,30 +34,36 @@
     <div class="header sticky-top py-3">
       <div class="container d-flex justify-content-between align-items-center">
         <h1 class="title">
-          <a href="#homepage">吳嫻老師的科普天地</a>
+          <a href="#homepage" class="homepage">吳嫻老師的科普天地</a>
         </h1>
         <ul class="nav align-items-center">
           <li class="control">
-            <a href="#scientific" class="animoBorderLeftRight lh-base"
-              >科普演講 <br />
-              節目訪談</a
+            <a href="#awards" class="animoBorderLeftRight lh-base text-center awards"
+              >教學 <br />
+              相關榮譽</a
             >
           </li>
           <li class="control">
-            <a href="#lesson" class="animoBorderLeftRight lh-base"
+            <a href="#lesson" class="animoBorderLeftRight lh-base lesson"
               >腦與學習 <br />
               通識課程</a
             >
           </li>
           <li class="control">
+            <a href="#scientific" class="animoBorderLeftRight lh-base scientific"
+              >科普演講 <br />
+              節目訪談</a
+            >
+          </li>
+          <li class="control">
             <a
               href="#summerschool"
-              class="animoBorderLeftRight text-center lh-base"
+              class="animoBorderLeftRight text-center lh-base summerschool"
               >認知神經科學 <br />
               暑期學校</a
             >
           </li>
-
+<!-- mobile 選單 -->
           <li class="nav-item dropdown d-md-none">
             <a
               class="nav-link"
@@ -78,15 +85,21 @@
             ></a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="#scientific"
-                  >科普演講 節目訪談</a
+                <a class="dropdown-item awards" href="#awards"
+                  >教學相關獎項</a
                 >
               </li>
               <li>
-                <a class="dropdown-item" href="#lesson">腦與學習 通識課程</a>
+                <a class="dropdown-item lesson" href="#lesson">腦與學習 通識課程</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#summerschool"
+                <a class="dropdown-item scientific" href="#scientific"
+                  >科普演講 節目訪談</a
+                >
+              </li>
+             
+              <li>
+                <a class="dropdown-item summerschool" href="#summerschool"
                   >認知神經科學 暑期學校</a
                 >
               </li>
@@ -104,20 +117,24 @@
 
         <p class="banner-text lh-lg mt-3">
           認知神經科學能跨領域運用，透過課程、演講和活動的推廣，讓更多人接觸其中，了解大腦與行為間的關係。無論是語言、學習、記憶等領域，皆能透過認知神經科學的角度來認識，甚至更了解自己的行為模式。
+          <button type="button" class="btn btn-outline-secondary  mt-5 w-100 border-2 f-18-d profwu" >↓ 了解更多</button>
         </p>
+
+        
+        
       </div>
     </div>
 
     <!-- 老師簡介 -->
     <div class="container-960 mt-5">
-      <div class="intro d-flex justify-content-around">
+      <div class="intro d-flex justify-content-around anchor" id="profwu">
         <div class="row row-cols-md-2">
           <div class="col-sm-4">
             <img src="image/teacher-2.png" class="teacher-img" alt="老師照片" />
             <p class="vertical f-32">About</p>
           </div>
 
-          <div class="col-sm-8 teacher-info">
+          <div class="col-sm-8 teacher-info anchor" >
             <h3 class="f-32 mx-auto denise">吳嫻 (Denise Hsien Wu)</h3>
             <ul class="mt-4 lh-lg">
               <li>任職學校：國立中央大學 認知神經科學研究所</li>
@@ -163,184 +180,35 @@
       <!-- <i class="fa-solid fa-quote-right"></i> -->
     </div>
 
-    <!-- 水平時間線 其他演講-->
-    <div class="speech mt-100 mb-100 pt-100 pb-100" id="scientific">
-      <h3 class="f-32 mb-5 container-960">科普演講</h3>
-      <section class="cd-horizontal-timeline">
-        <div class="timeline">
-          <div class="events-wrapper">
-            <div class="events">
-              <ol>
-                <li>
-                  <a href="#0" data-date="16/01/2014" class="selected">2014</a>
-                </li>
-                <li><a href="#0" data-date="28/02/2014">2015</a></li>
-                <li><a href="#0" data-date="20/04/2014">2016</a></li>
-                <li><a href="#0" data-date="20/05/2014">2017</a></li>
-                <li><a href="#0" data-date="09/07/2014">2018</a></li>
-                <li><a href="#0" data-date="30/08/2014">2019</a></li>
-                <li><a href="#0" data-date="15/09/2014">2021</a></li>
-              </ol>
-
-              <span class="filling-line" aria-hidden="true"></span>
-            </div>
-            <!-- .events -->
-          </div>
-          <!-- .events-wrapper -->
-
-          <ul class="cd-timeline-navigation">
-            <li><a href="#0" class="prev inactive">Prev</a></li>
-            <li>
-              <a href="#0" class="next">Next </a>
-            </li>
-          </ul>
-          <!-- .cd-timeline-navigation -->
-        </div>
-        <!-- .timeline -->
-
-        <div class="events-content">
-          <ol>
-            <!--    2014    -->
-            <li class="selected" data-date="16/01/2014">
-              <h2>TedxNCU 解碼複雜的中文閱讀:來自大腦的證據</h2>
-              <a
-                href="https://www.youtube.com/watch?v=P0yF9k-CjPQ"
-                class="d-block"
-                target="_blank"
-                ><img src="image/ted.png" alt="ted"
-              /></a>
-            </li>
-            <!-- 2015 -->
-            <li data-date="28/02/2014">
-              <h2>TedxTaipei 如何用科學方法驗證「自由意志」是否存在？</h2>
-              <img
-                src="image/speech-2015.png"
-                alt="2015speech"
-                class="d-block"
-              />
-            </li>
-
-            <!--       2016 -->
-            <li data-date="20/04/2014">
-              <h2>
-                國立自然科學博物館週末 Let’s go！分享大師視野
-                究腦學．用腦學．為腦學
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-                praesentium officia, fugit recusandae ipsa, quia velit nulla
-                adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
-                dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                reiciendis eligendi! Doloremque quia pariatur harum ea amet
-                quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                <a href="https://reurl.cc/8WzjZX" class="text-end d-block"
-                  >查看更多</a
-                >
-              </p>
-            </li>
-            <!-- 2017 -->
-            <li data-date="20/05/2014">
-              <h2>
-                國立自然科學博物館週末Let’s go！分享大師視野 智慧的腦，腦的智慧
-              </h2>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-                praesentium officia, fugit recusandae ipsa, quia velit nulla
-                adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
-                dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                reiciendis eligendi! Doloremque quia pariatur harum ea amet
-                quibusdam quisquam, quae, temporibus dolores porro doloribus.
-              </p>
-            </li>
-            <!-- 2018 -->
-            <li data-date="09/07/2014">
-              <h2>科學人雜誌科創講堂 中文、英文、外星文？大腦幫你學語文</h2>
-              <img src="image/speech-2018.png" alt="2018演講" class="d-block" />
-            </li>
-            <!-- 2019 -->
-            <li data-date="30/08/2014">
-              <h2>科學人雜誌科創講堂 學習外語有什麼難？大腦知道!</h2>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-                praesentium officia, fugit recusandae ipsa, quia velit nulla
-                adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
-                dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                reiciendis eligendi! Doloremque quia pariatur harum ea amet
-                quibusdam quisquam, quae, temporibus dolores porro doloribus.
-              </p>
-            </li>
-            <!-- 2021 -->
-            <li data-date="15/09/2014">
-              <h2>國立台灣科學教育館 讓我歡喜讓我憂：大腦上癮的美麗與哀愁</h2>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-                praesentium officia, fugit recusandae ipsa, quia velit nulla
-                adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
-                dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                reiciendis eligendi! Doloremque quia pariatur harum ea amet
-                quibusdam quisquam, quae, temporibus dolores porro doloribus.
-              </p>
-            </li>
-          </ol>
-        </div>
-        <!-- .events-content -->
-      </section>
-    </div>
-    <!-- 演講訪談 -->
-    <!-- <div class="speech mt-100 mb-100 pt-100" id="scientific">
-      <div class="container-960 pb-5">
-        <h3 class="f-32 mb-5">科普演講 節目訪談</h3>
-        <p class="mb-3">
-          How to learn Chinese in a smarter way…with your brain? | TEDxNCU 2014
-        </p>
-        <div class="embed-container">
-          <iframe
-            width="560px"
-            src="https://www.youtube.com/embed/P0yF9k-CjPQ"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <p class="mb-3">
-          如何用科學方法驗證「自由意志」是否存在？ | TEDxTaipei 2015
-        </p>
-        <div class="embed-container">
-          <iframe
-            src="https://www.youtube.com/embed/DFH1uTRd7iI"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <p class="mb-3">
-          中文、英文、外星文？大腦幫你學語文 | 科學人雜誌 科創講堂 2018
-        </p>
-        <div class="embed-container">
-          <iframe
-            src="https://www.youtube.com/embed/BYiySzO8D2w"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <p class="mb-3">明日學之道 - 改善頭腦 | 地球證詞導讀 大愛電視 2019</p>
-        <div class="embed-container">
-          <iframe
-            src="https://www.youtube.com/embed/yPbIxj_Uaxo"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- 腦與學習通識課程 -->
-    <div class="imgset" id="lesson">
+    <!-- 通識教育相關榮譽 -->
+    <div class="class-activity mt-100 py-5 anchor" id="awards" name="awards">
       <div class="container">
+        <h3 class="f-32 mb-5">通識教育與教學相關榮譽</h3>
+      <div class="container-960">
+        <ul class="bulleted">
+          <li class="mb-3">
+            2007 中央大學理學院優良教師
+          </li>
+          <li class="mb-3">
+            2009 中央大學優良導師
+          </li>
+          <li class="mb-3">
+            2011 中央大學資電學院優良教師
+          </li>
+          <li class="mb-3">
+            2012 中央大學理學院優良教師
+          </li>
+          <li class="mb-3">
+            2021 中央大學通識與共同必修課程教學優良教師
+          </li>
+        </ul>
+      </div>
+    </div>
+      </div>
+      
+    <!-- 腦與學習通識課程 -->
+    <div class="imgset anchor" id="lesson"  name="lesson">
+      <div class="container pt-100">
         <img src="image/book.jpg" alt="底圖" class="bookimg" />
         <h3 class="f-32">腦與學習 通識課程</h3>
         <p class="f-24 text-brown-d mt-2 mb-5">課程開設於國立中央大學</p>
@@ -354,6 +222,7 @@
             <p class="mb-5 lh-lg">
               自20世紀末起，認知神經科學家結合實驗心理學的研究法以及新興的腦科學儀器，大幅推進對人類大腦的研究，也有助於深入掌握人類學習行為。這些和人類學習行為相關的腦科學成果，不僅幫助我們了解各項認知功能運作的機制，也有效提升相關知識於任何與人類行為相關範疇的跨領域應用，對教育、疾病治療、行為矯正、健康照護、市場行銷等領域產生影響。這門課程將會介紹如何用科學的方法來研究並瞭解人的學習行為，並說明各種認知行為背後的生理機制；不同領域的學生修習這門課，不但可以增加對自己學習行為與相關神經機制的了解，也有助於建立行為科學和腦科學的基本素養，培養明辨常見迷思和錯誤觀念的能力，也將為專業的考量與觀念帶來衝擊，啟發更貼近人性的思維。
             </p>
+
 
             <h5 class="f-20-l mb-2">教學方法</h5>
             <p class="mb-5 lh-lg">
@@ -438,7 +307,7 @@
         </div>
       </div>
     </div>
-    <!-- 課堂活動 -->
+    <!-- 腦與學習課堂活動 -->
     <div class="class-activity">
       <div class="container-960 p-5">
         <h4 class="f-24">課堂活動</h4>
@@ -470,8 +339,320 @@
       </div>
     </div>
 
+    <!-- 演講訪談 -->
+    <div id="scientific" name="scientific" class="anchor">
+    <h3 class="f-32 container mt-100 ">科普演講 節目訪談</h3>
+    <div class="page" >
+      <div class="timeline-list">
+        <div class="timeline-list__group">
+          <span class="timeline-list__year time" aria-hidden="true">2014</span>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2008-02-02">
+                  <span class="time__day"></span>
+                  <span class="time__month">Ted x NCU </span>
+                </time>
+              </header>
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">解碼複雜的中文閱讀：來自大腦的證據</h4>
+                  <a href="https://reurl.cc/5GX0rR" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 查看影片</a>
+                </div>
+                <img src="image/speech/speech-2014.png" alt="2014 演講" width="40%">
+                
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="timeline-list__group">
+          <span class="timeline-list__year time" aria-hidden="true">2015</span>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2008-02-02">
+                  <span class="time__day"></span>
+                  <span class="time__month">Ted x Taipei </span>
+                </time>
+              </header>
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">如何用科學方法驗證「自由意志」是否存在？</h4>
+                  <a href="https://www.youtube.com/watch?v=DFH1uTRd7iI" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 查看影片</a>
+                </div>
+                <img src="image/speech/speech-2015.png" alt="2015 演講" width="40%">                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-list__group">
+          <span class="timeline-list__year time" aria-hidden="true">2016</span>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2008-02-02">
+                  <span class="time__day"></span>
+                  <span class="time__month">國立自然科學博物館週末Let’s go!分享大師視野 </span>
+                </time>
+              </header>
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">究腦學．用腦學．為腦學</h4>
+                  <a href="https://reurl.cc/QjoZQq" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 查看影片和文章</a>
+                </div>
+                <img src="image/speech/speech-2016.png" alt="2016 演講" width="40%">                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-list__group">
+          <span class="timeline-list__year time" aria-hidden="true">2017</span>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2008-02-02">
+                  <span class="time__day"></span>
+                  <span class="time__month">國立自然科學博物館週末Let’s go!分享大師視野 </span>
+                </time>
+              </header>
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">智慧的腦，腦的智慧</h4>
+                  <a href="https://reurl.cc/veG99y" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 觀看影片和文章</a>
+                </div>
+                <img src="image/speech/speech-2017.png" alt="2017演講" width="40%">                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-list__group">
+          <span class="timeline-list__year time" aria-hidden="true">2018</span>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2008-02-02">
+                  <span class="time__day"></span>
+                  <span class="time__month">科學人雜誌科創講堂</span>
+                </time>
+              </header>
+              
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">中文、英文、外星文？大腦幫你學語文</h4>
+                  <a href="https://www.youtube.com/embed/BYiySzO8D2w" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 查看影片</a>
+                  <a href="https://sa.ylib.com/MagArticle.aspx?id=4155" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 觀看文章</a>
+                </div>
+                <img src="image/speech/speech-2018.png" alt="2018 演講" width="40%">                
+              </div>
+            </div>
+          </div>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2018">
+                  <span class="time__day"></span>
+                  <span class="time__month">電視紀錄片導讀 ｜ 公共電視—主題之夜</span>
+                </time>
+              </header>
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">超負荷大腦</h4>
+                  <a href="https://viewpoint.pts.org.tw/?p=5393" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 觀看文章</a>
+                </div>
+                <img src="image/speech/speech-2018-2.jpeg" alt="2018 演講" width="40%">                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-list__group">
+          <span class="timeline-list__year time" aria-hidden="true">2019</span>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2008-02-02">
+                  <span class="time__day"></span>
+                  <span class="time__month">科學人雜誌科創講堂</span>
+                </time>
+              </header>
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">學習外語有什麼難？大腦知道！</h4>
+                  <div class="button-group">
+                    <a href="https://sa.ylib.com/MagArticle.aspx?id=4552" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 觀看文章</a>
+                  
+                  </div>
+                  
+                </div>
+                <img src="image/speech/speech-2019.jpg" alt="2019 演講" width="40%">                
+              </div>
+            </div>
+          </div>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2008-02-02">
+                  <span class="time__day"></span>
+                  <span class="time__month">電視紀錄片導讀｜大愛電視</span>
+                </time>
+              </header>
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">地球證詞 明日學之道—改善頭腦</h4>
+                  <a href="https://www.youtube.com/watch?v=yPbIxj_Uaxo" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 查看影片</a>
+                </div>
+                <img src="image/speech/speech-2019-2.png" alt="2019演講" width="40%">                
+              </div>
+            </div>
+          </div>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2008-02-02">
+                  <span class="time__day"></span>
+                  <span class="time__month">電視紀錄片導讀｜大愛電視</span>
+                </time>
+              </header>
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">地球證詞 玩出力量</h4>
+                  <a href="https://www.youtube.com/watch?v=6Mf2KrI_Ur4" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 查看影片</a>
+                </div>
+                <img src="image/speech/speech-2019-3.png" alt="2019演講" width="40%">                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-list__group">
+          <span class="timeline-list__year time" aria-hidden="true">2020</span>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2008-02-02">
+                  <span class="time__day"></span>
+                  <span class="time__month">電視紀錄片導讀｜大愛電視</span>
+                </time>
+              </header>
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">地球證詞 心智工廠</h4>
+                  <a href="https://www.youtube.com/watch?v=stK5UdBwpuw" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 查看影片</a>
+                </div>
+                <img src="image/speech/speech-2020.png" alt="2020演講" width="40%">                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-list__group">
+          <span class="timeline-list__year time" aria-hidden="true">2021</span>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2008-02-02">
+                  <span class="time__day"></span>
+                  <span class="time__month">國立台灣科學教育館</span>
+                </time>
+              </header>
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">讓我歡喜讓我憂：大腦上癮的美麗與哀愁</h4>
+                  <a href="https://reurl.cc/qOoLAN" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 查看資訊</a>
+                  <a href="https://reurl.cc/qOqrl0" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 收聽 podcast</a>
+                </div>
+                <!-- <img src="image/speech-2021.png" alt="2021演講" width="40%">                 -->
+              </div>
+            </div>
+          </div>
+          <div class="timeline-list__cards">
+            <div class="timeline-list__card card-t">
+              <header class="card__header">
+                <time class="time" datetime="2008-02-02">
+                  <span class="time__day"></span>
+                  <span class="time__month">電視紀錄片導讀｜大愛電視</span>
+                </time>
+              </header>
+              <div class="card__content d-flex justify-content-between">
+                <div>
+                  <h4 class="mb-3">地球證詞 美麗的意外</h4>
+                  <a href="https://www.youtube.com/watch?v=TKPD4rKIMKw" class="btn btn-outline-secondary btn-sm rounded-pill" target="_blank">→ 查看影片</a>
+                </div>
+                <img src="image/speech/speech-2021-2.png" alt="2021演講" width="40%">                
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
+        
+      </div>
+    </div>
+  </div>
+    
+    
+
+    <!-- 演講訪談 -->
+    <!-- <div class="speech mt-100 mb-100 pt-100" id="scientific">
+      <div class="container-960 pb-5">
+        <h3 class="f-32 mb-5">科普演講 節目訪談</h3>
+        <p class="mb-3">
+          How to learn Chinese in a smarter way…with your brain? | TEDxNCU 2014
+        </p>
+        <div class="embed-container">
+          <iframe
+            width="560px"
+            src="https://www.youtube.com/embed/P0yF9k-CjPQ"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p class="mb-3">
+          如何用科學方法驗證「自由意志」是否存在？ | TEDxTaipei 2015
+        </p>
+        <div class="embed-container">
+          <iframe
+            src="https://www.youtube.com/embed/DFH1uTRd7iI"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p class="mb-3">
+          中文、英文、外星文？大腦幫你學語文 | 科學人雜誌 科創講堂 2018
+        </p>
+        <div class="embed-container">
+          <iframe
+            src="https://www.youtube.com/embed/BYiySzO8D2w"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p class="mb-3">明日學之道 - 改善頭腦 | 地球證詞導讀 大愛電視 2019</p>
+        <div class="embed-container">
+          <iframe
+            src="https://www.youtube.com/embed/yPbIxj_Uaxo"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div> -->
+
+    
+    
+
     <!-- 暑期學校 -->
-    <div class="summer-school" id="summerschool">
+    <div class="summer-school anchor" id="summerschool" name="summerschool">
       <div class="container-960 p-5">
         <h3 class="f-32 mb-5">認知神經科學暑期學校</h3>
         <p class="ss-content lh-lg p-5 mb-5">
@@ -571,6 +752,120 @@
             </p>
           </li>
         </ul>
+        <!-- 學員回饋 -->
+        <div class="speech mt-100 mb-100 pt-100" id="scientific">
+          <h4 class="f-24 mb-5 container-960">歷年學員回饋</h4>
+          <section class="cd-horizontal-timeline">
+            <div class="timeline">
+              <div class="events-wrapper">
+                <div class="events">
+                  <ol>
+                    <li>
+                      <a href="#0" data-date="16/01/2014" class="selected">2014</a>
+                    </li>
+                    <li><a href="#0" data-date="28/02/2014">2015</a></li>
+                    <li><a href="#0" data-date="20/04/2014">2016</a></li>
+                    <li><a href="#0" data-date="20/05/2014">2017</a></li>
+                    <li><a href="#0" data-date="09/07/2014">2018</a></li>
+                    <li><a href="#0" data-date="30/08/2014">2019</a></li>
+                    <li><a href="#0" data-date="15/09/2014">2020</a></li>
+                    <li><a href="#0" data-date="01/11/2014">2021</a></li>
+                  </ol>
+    
+                  <span class="filling-line" aria-hidden="true"></span>
+                </div>
+                <!-- .events -->
+              </div>
+              <!-- .events-wrapper -->
+    
+              <ul class="cd-timeline-navigation">
+                <li><a href="#0" class="prev inactive">Prev</a></li>
+                <li>
+                  <a href="#0" class="next">Next </a>
+                </li>
+              </ul>
+              <!-- .cd-timeline-navigation -->
+            </div>
+            <!-- .timeline -->
+    
+            <div class="events-content">
+              <ol>
+                <!--    2014    -->
+                <li class="selected" data-date="16/01/2014">
+                  <h5>2014 年學員回饋</h5>
+                  <p class="mb-3">「每位老師都針對自己所研究的領域去切入認知神經科學的議題，很直接引起不同背景學生的共鳴，並且利用許多實驗的設計以及生活化的例子，讓我可以較快的進入狀況。而且我覺得最讓我 enjoy 在演講裡的是，老師們不只是告訴我們如何研究，還告訴我們做研究的態度，我想這是未來想成為研究者的 sense。每位老師都做了最棒的示範。」</p>
+                  <p>
+                    「每位老師都分享了經驗談，讓我聯想到『不聽老人言，吃虧在眼前』這句話，雖然用這樣的比喻蠻好笑的，但是真的可以讓我們做研究該有的態度及熱情，我想應該很多人都受到每位老師的感染，對於研究有了更多的好奇心，我就是其中一位!!」
+                
+                  </p>
+                </li>
+                <!-- 2015 -->
+                <li data-date="28/02/2014">
+                  <h5>2015 年學員回饋</h5>
+                  <p class="mb-3">「配合早上演講下午介紹儀器讓人印象更加深刻，我覺得非常好，每天早上上完課就開始期待下午的儀器介紹！」</p>
+                  <p class="mb-3">「每個行為演示實驗都好玩有趣，也謝謝每位講師以及工作人員精心準備，讓我們在短短時間內看到體會到很多不同有趣的小小實驗。」</p>
+                  <p>「老師們都充滿熱情，課後的提問也都回答得很詳盡，非常感謝！」</p>
+                  
+                </li>
+    
+                <!--       2016 -->
+                <li data-date="20/04/2014">
+                  <h5>
+                    2016 年學員回饋
+                  </h5>
+                  <p class="mb-3">
+                    「這是我參加過辦得最好的暑期營隊活動，很喜歡像這樣以學習為主軸的行程安排，沒有很多意義不大又浪費精力的團康活動，就算是餘興節目也讓人感覺是精心設計，很感謝主辦單位、工作人員的用心與努力。」
+                  </p>
+                  <p>「最讓坐在台下的我感動的是，每每聽到老師們在艱難的科學辯思道路上的那種堅持，不為私、只為了追求真理，增進人類未來福祉，而不禁情緒激動眼眶泛淚。這樣的特質，讓我也好想擁有，想跟老師們看齊」</p>
+                </li>
+                <!-- 2017 -->
+                <li data-date="20/05/2014">
+                  <h5>
+                    2017 年學員回饋
+                  </h5>
+    
+                  <p>
+                    認知神經科學這麼大的研究範圍中，各個研究不同領域的專業老師將他們研究主題整理統合，並在短短的時間內做了最詳盡的介紹，讓我們有機會一窺認知神經科學的迷人之處，能夠在短短五天聽到麼多演講，真的是一個獲取新知的難得經驗。」
+                  </p>
+                </li>
+                <!-- 2018 -->
+                <li data-date="09/07/2014">
+                  <h5>2018 學員回饋</h5>
+                  <p class="mb-3">「每天的安排都很充實，讓我獲益良多，感謝您們的用心安排！」</p>
+                  <p>「嘗試挑戰了辯論！有趣又有挑戰性。」</p>
+                </li>
+                <!-- 2019 -->
+                <li data-date="30/08/2014">
+                  <h5>2019 年學員回饋</h5>
+    
+                  <p>
+                    「五天的的課程總結下來，我對於認知神經科學這個領域有了不再只是一般科普讀物的程度而是更加真實的貼近這個領域的認識，還見識到現在真正活躍在認知神經科學最前端的各個教授們都在進行甚麼樣子的研究，這些課程內容在結束這五天的學習後甚至還要花許多時間去吸收、體會，內容真的非常非常的扎實而且有趣。」
+                  </p>
+                </li>
+                <!-- 2020 -->
+                <li data-date="15/09/2014">
+                  <h5>2020 年學員回饋</h5>
+    
+                  <p class="mb-3">
+                    「很感謝您們能開放這次課程，謝謝各位教授用心的講解，讓我可藉由線上增長不少知識，也可運用於工作職場上，期待下次還能再次參加，謝謝這次付出的工作人員。」
+                  </p>
+                  <p>「希望以後能繼續能有網上課程，對於中南部的學員來說是一大福音。因為每年的實體課程除了限制人數外，還有並不容易錄取報名。」</p>
+                </li>
+                <!-- 2021 -->
+                <li data-date="01/11/2014">
+                  <h5>2021 年學員回饋</h5>
+    
+                  <p class="mb-3">
+                    「很謝謝老師們都盡可能地用好理解的方式去講解一些困難的概念，之前上其他的課程大部分都是聽不懂的，但這次暑期課程就有半數以上是能聽懂的。感謝所有老師和工作人員，共同協辦如此具有意義的活動!」
+                  </p>
+                  <p>「真的很感謝舉辦這個活動，而且內容是很適合初學者的課程，以簡單明瞭的方式解說各種專業知識。這能減輕直接找文獻卻看不懂的挫折，反而是聽完後，有更多關鍵字可以去找自己想要的資料，真心覺得很棒！收穫滿滿！」</p>
+                </li>
+              </ol>
+            </div>
+            <!-- .events-content -->
+          </section>
+        </div>
+        
         <div class="mx-auto mt-5 text-center">
           <button
             type="button"
@@ -578,14 +873,17 @@
           >
             <a
               href="http://140.115.47.150/2021summer/index.asp?fbclid=IwAR3qJZVEnh5ztfMcs534WXXiUnW9jzAd0TW8Ii-4QlWZ4EP9-YPZ2VyPJX4"
-              class="ss-btn"
+              class="ss-btn f-18-d border-2"
               target="_blank"
               >➜ 暑期學校網站</a
             >
           </button>
+          
         </div>
       </div>
     </div>
+
+    <!-- footer -->
     <div class="footer py-4 text-center">
       <p>Copyright ⓒ 2022 Scientific Outreach of Denise Hsien Wu</p>
     </div>
@@ -599,5 +897,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
     <script src="./js/horizontal-timeline.js"></script>
+    <script src="./js/page.js"></script>
   </body>
 </html>
