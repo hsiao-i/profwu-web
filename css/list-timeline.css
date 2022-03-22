@@ -65,7 +65,7 @@ DEPENDENCES
   
     font-size: var(--timeFontSize, 1rem);
     font-weight: var(--timeFontWeight, 700);
-    text-transform: var(--timeTextTransform, uppercase);
+    /* text-transform: var(--timeTextTransform, uppercase); */
     color: var(--timeColor, currentColor);
   }
   

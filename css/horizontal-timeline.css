@@ -90,11 +90,32 @@ Main Components
   );
   background-image: linear-gradient(to left, #fde458, rgba(248, 248, 248, 0));
 }
+
+.cd-horizontal-timeline .events-wrapper-light::before {
+  left: 0;
+  background-image: -webkit-linear-gradient(
+    left,
+    #f8f8f8,
+    rgba(248, 248, 248, 0)
+  );
+  background-image: linear-gradient(to right, #fffceb, rgba(248, 248, 248, 0));
+}
+.cd-horizontal-timeline .events-wrapper-light::after {
+  right: 0;
+  background-image: -webkit-linear-gradient(
+    right,
+    #fffceb,
+    rgba(248, 248, 248, 0)
+  );
+  background-image: linear-gradient(to left, #fffceb, rgba(248, 248, 248, 0));
+}
+
+
 .cd-horizontal-timeline .events {
   /* this is the grey line/timeline */
   position: absolute;
   z-index: 1;
-  left: 0;
+  left: -200px;
   top: 49px;
   height: 2px;
   /* width will be set using JavaScript */
@@ -107,7 +128,7 @@ Main Components
   /* this is used to create the green line filling the timeline */
   position: absolute;
   z-index: 1;
-  left: 0;
+  left: -5px;
   top: 0;
   height: 100%;
   width: 100%;
@@ -145,7 +166,7 @@ Main Components
   /* this is used to create the event spot */
   content: "";
   position: absolute;
-  left: 50%;
+  left: 18px;
   right: auto;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
